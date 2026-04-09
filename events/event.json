@@ -1,0 +1,10 @@
+{
+  "Records": [
+    {
+      "s3": {
+        "bucket": { "name": "my-bucket-file25" },
+        "object": { "key": "40881239-young-boy-playing-with-a-collie-dog-in-the-park-with-a-ball.jpg" }
+      }
+    }
+  ]
+}
