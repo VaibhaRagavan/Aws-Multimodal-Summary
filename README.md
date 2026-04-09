@@ -6,9 +6,10 @@ Image & Video to Text Summarization (AWS Serverless)
 This project is a serverless application built using AWS SAM that processes images, audio, and video files uploaded to S3. It extracts meaningful information and generates summaries using AWS AI services.
 
 ---
+
 # ✨ Features
   # 🖼️ Image Processing
-  - Detects labels using Amazon Rekognition
+  - Detects labels using  Amazon Rekognition 
   - Extracts text from images
   - Generates structured descriptions using an LLM (Bedrock)
   # 🎧 Audio/Video Processing 
@@ -18,6 +19,15 @@ This project is a serverless application built using AWS SAM that processes imag
   - AWS Lambda
   - API Gateway
   - S3 event-driven processing
+---
+# 🛠 Tech Stack
+- Aws Lambda
+- S3
+- Aws Transcribe
+- Aws Rekognition
+- Aws sam
+- Bedrock llm
+
 ---
 # 🏗️ Architecture
 ```mermaid
@@ -96,15 +106,14 @@ Bedrock response parsing assumes: result["choices"][0]["message"]["content"]
 
 ---
 # 🔐 IAM Permissions
-```
 The Lambda function requires:
-
-* bedrock:InvokeModel
-* rekognition:DetectLabels
-* rekognition:DetectText
-* transcribe:StartTranscriptionJob
-* transcribe:GetTranscriptionJob
-* s3:GetObject
+```
+bedrock:InvokeModel
+rekognition:DetectLabels
+rekognition:DetectText
+transcribe:StartTranscriptionJob
+transcribe:GetTranscriptionJob
+s3:GetObject
 ```
 ---
 # 🧪Sample output
@@ -130,6 +139,6 @@ The Lambda function requires:
     - Improve prompt engineering for better summaries
     - Add speaker identification for meeting summaries
 ---
-# 👨‍💻 Conculsion
+# 👨‍💻 Conclusion
 
-Built as a serverless AI pipeline using AWS services ,speech recognition, and large language models into a single workflow.
+Built an AWS serverless multimodal summarization pipeline that automatically processes images, audio, and video to generate structured summaries using Amazon Rekognition, Transcribe, and Bedrock. Designed the workflow using Lambda and S3 events, demonstrating cloud-native AI engineering and end-to-end data-to-insight pipeline skills.
