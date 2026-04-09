@@ -7,7 +7,7 @@ This project is a serverless application built using AWS SAM that processes imag
 
 ---
 
-# ✨ Features
+
   # 🖼️ Image Processing
   - Detects labels using  Amazon Rekognition 
   - Extracts text from images
