@@ -1,12 +1,12 @@
 # Aws-Multimodal-Summary
 Image & Video to Text Summarization (AWS Serverless)
 
+
 # 📌 Overview
 
-This project is a serverless application built using AWS SAM that processes images, audio, and video files uploaded to S3. It extracts meaningful information and generates summaries using AWS AI services.
+This project is a serverless AI pipeline on AWS that automatically processes images, audio, and video files uploaded to S3 and generates structured, meaningful summaries using AI services.
 
----
-
+It demonstrates how real-world multimedia data can be converted into actionable insights using cloud-native AI services.
 
   # 🖼️ Image Processing
   - Detects labels using  Amazon Rekognition 
@@ -16,9 +16,12 @@ This project is a serverless application built using AWS SAM that processes imag
   - Converts speech to text using Amazon Transcribe
   - Summarizes transcripts into structured outputs (meeting notes, lecture notes, reviews, etc.)
   # ⚡ Serverless Architecture  
-  - AWS Lambda
-  - API Gateway
-  - S3 event-driven processing
+      - Amazon S3 → File upload trigger
+      - AWS Lambda → Processing engine
+      - Amazon Rekognition → Image analysis
+      - Amazon Transcribe → Speech-to-text
+      - AWS Bedrock → LLM-based summarization
+
 ---
 # 🛠 Tech Stack
 - Aws Lambda
